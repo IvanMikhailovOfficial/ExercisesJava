@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Pear pear = new Pear();
+        Pear.addPrice(70);
+        Pear pear2 = new Pear();
+        Pear.addPrice(90);
+        System.out.println("Груши стоят " + Pear.pearsPrice + " " + "рублей");
+    }
+
+    public static class Pear {
+        public static int pearsPrice = 0;
+
+        public static void addPrice(int pearsPrice) {
+            Pear.pearsPrice = Pear.pearsPrice + pearsPrice;
+
+        }
+    }
+}
