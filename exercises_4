@@ -1,0 +1,13 @@
+public class Main {
+        private String name = "неизвестный крокодил";
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public static void main(String[] args) {
+            Main crocodile = new Main();
+            crocodile.setName("Гена");
+            System.out.println(crocodile.name);
+        }
+}
