@@ -1,0 +1,22 @@
+public class Main {
+        public static void main(String[] args) {
+            checkAge(17);
+            checkAge(43);
+            checkAge(37);
+        }
+
+        public static void checkAge(int a) {
+            String in = "В " + a + " лет " + " можно попасть на вечеринку 30+";
+            String out = "В " + a + " лет " + " нельзя попасть на вечеринку 30+";
+
+            if (a > 30) {
+                if (a < 40) {
+                    System.out.println(in);
+                } else {
+                    System.out.println(out);
+                }
+            } else {
+                System.out.println(out);
+            }
+        }
+}
