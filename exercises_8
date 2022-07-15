@@ -1,0 +1,15 @@
+public class Main {
+        public static void main(String[] args) {
+            Dog dog1 = new Dog();
+            Dog.count++;
+
+            Dog cat2 = new Dog();
+            Dog.count++;
+
+            System.out.println("The dog count is " + Dog.count);
+        }
+
+        public static class Dog {
+            public static int count = 0;
+        }
+}
