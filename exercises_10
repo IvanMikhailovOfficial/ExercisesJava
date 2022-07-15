@@ -1,0 +1,16 @@
+public class Main {
+        public static void main(String[] args) {
+            compare(15);
+            compare(30);
+            compare(45);
+        }
+
+        public static void compare(int a) {
+            if (a < 30){
+                System.out.println("Число меньше 30");
+            } else {
+                System.out.println ("Число больше или равно 30");
+            }
+
+        }
+}
