@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class Main {
+        public static void main(String[] args) throws Exception {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            int daysOfTheWeek = Integer.parseInt(reader.readLine());
+            String result = "такого дня недели не существует";
+
+            if (daysOfTheWeek == 1){
+                result = "понедельник";
+            }
+            if (daysOfTheWeek == 2){
+                result = "вторник";
+            }
+            if (daysOfTheWeek == 3){
+                result = "среда";
+            }
+            if (daysOfTheWeek == 4){
+                result = "четверг";
+            }
+            if (daysOfTheWeek == 5){
+                result = "пятница";
+            }
+            if (daysOfTheWeek == 6){
+                result = "суббота";
+            }
+            if (daysOfTheWeek == 7){
+                result = "воскресенье";
+            }
+            System.out.println (result);
+
+        }
+}
