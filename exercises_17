@@ -1,0 +1,21 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader (new InputStreamReader());
+        int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        if (a > 0 && b > 0){
+            System.out.println("Первая");
+        } else if (a < 0 && b > 0){
+            System.out.println("Вторая");
+        } else if (a < 0 && b < 0){
+            System.out.println("Третья");
+        } else if (a > 0 && b < 0){
+            System.out.println("Четвертая");
+        }
+
+    }
+}
