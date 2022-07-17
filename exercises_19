@@ -1,0 +1,23 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class Main {
+        public static void main(String[] args) throws Exception {
+            BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
+            int x = Integer.parseInt(reader.readLine());
+            if ((x > 0) && (x < 10) && (x % 2 == 0)){
+                System.out.println("четное однозначное число");
+            } else if ((x > 0) && (x < 10) && (x % 2 != 0)){
+                System.out.println("нечетное однозначное число");
+            } else if ((x > 9) && (x < 100) && (x % 2 == 0)){
+                System.out.println("четное двузначное число");
+            } else if ((x > 9) && (x < 100) && (x % 2 != 0)){
+                System.out.println("нечетное двузначное число");
+            } else if ((x > 99) && (x < 1000) && (x % 2 == 0)){
+                System.out.println("четное трехзначное число");
+            } else if ((x > 99) && (x < 1000) && (x % 2 != 0)){
+                System.out.println("нечетное трехзначное число");
+            }
+        }
+}
