@@ -1,0 +1,31 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
+        int number1 = Integer.parseInt(reader.readLine());
+        int number2 = Integer.parseInt(reader.readLine());
+        int number3 = Integer.parseInt(reader.readLine());
+        int counterPositiv = 0;
+        int counterNegativ = 0;
+        if (number1 > 0){
+            counterPositiv++;
+        } else if (number1 < 0){
+            counterNegativ++;
+        }
+        if (number2 > 0){
+            counterPositiv++;
+        } else if (number2 < 0){
+            counterNegativ++;
+        }
+        if (number3 > 0){
+            counterPositiv++;
+        } else if (number3 < 0){
+            counterNegativ++;
+        }
+        System.out.println("количество отрицательных чисел: " + counterNegativ);
+        System.out.println("количество положительных чисел: " + counterPositiv);
+    }
+}
