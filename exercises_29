@@ -1,0 +1,18 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+        public static void main(String[] args) throws Exception {
+            BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
+            int m = Integer.parseInt(reader.readLine());
+            int n = Integer.parseInt(reader.readLine());
+
+            for (int a = 0; a < m; a++){
+                for (int b = 0; b < n; b++){
+                    System.out.print("Java my love ");
+                }
+                System.out.println();
+            }
+
+        }
+}
