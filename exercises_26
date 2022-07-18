@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Сколько подарков несет мне Дед Мороз?");
+        int gift = scanner.nextInt();
+
+        for (int i = 0; i <= gift; i++) {
+            System.out.println("Я получил и распаковал " + i + " коробок с подарками!");
+
+        }
+    }
+}
