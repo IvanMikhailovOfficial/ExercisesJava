@@ -1,0 +1,35 @@
+public class Main {
+    public static char[][] chars = {
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'},
+            {'-', '-', '-', '-', '-', '-', '-', '-'}};
+
+    public static void main(String[] args) {
+        printArray();
+
+        for (int horizontal = 0; horizontal < chars.length; horizontal++) {
+            for (int vertical = 0; vertical < chars[0].length; vertical++) {
+                if (horizontal != 0 && horizontal != chars.length - 1 && vertical != 0 && vertical != chars[0].length - 1) {
+                    chars[horizontal][vertical] = '+';
+                }
+            }
+        }
+
+        printArray();
+    }
+
+    private static void printArray() {
+        for (int horizontal = 0; horizontal < chars.length; horizontal++) {
+            for (int vertical = 0; vertical < chars[horizontal].length; vertical++) {
+                System.out.print(chars[horizontal][vertical] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+}
