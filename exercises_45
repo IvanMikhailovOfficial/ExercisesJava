@@ -1,0 +1,16 @@
+public class Main {
+
+    public static int[][] MultiplicationTable;
+
+    public static void main(String[] args) {
+        MultiplicationTable = new int[10][10];
+        for (int horizontal = 1; horizontal <= 10; horizontal++) {
+            for (int vertical = 1; vertical <= 10; vertical++) {
+                MultiplicationTable[horizontal - 1][vertical - 1] = horizontal * vertical;
+                System.out.print(MultiplicationTable[horizontal - 1][vertical - 1]);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
