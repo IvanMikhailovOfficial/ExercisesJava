@@ -1,0 +1,10 @@
+public class test {
+    public static void main(String[] args) {
+        double Bart;
+        Bart = 789.875;
+
+        System.out.print("Я хочу ");
+        System.out.println(Bart);
+        System.out.println("долларов в день!");
+    }
+}
