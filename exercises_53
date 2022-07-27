@@ -1,0 +1,13 @@
+public class test {
+    public static void main(String[] args) {
+        int Password = 123456;
+        if (Password == 12345)
+        {
+            System.out.println("Пароль " + Password + " верный. Вы вошли в систему.");
+        }
+        else
+        {
+            System.out.println("Пароль " + Password + " не верный. Доступ отклонен.");
+        }
+    }
+}
