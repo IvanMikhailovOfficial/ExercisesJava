@@ -1,0 +1,23 @@
+public class test {
+    public static void main(String[] args) {
+        int cups, plates, dishes;
+        cups = 4;
+        plates = 14;
+
+        dishes = cups + plates;
+        System.out.println("В нашем наборе посуды всего " + dishes + " чашек и тарелок!");
+
+        dishes = cups - plates;
+        System.out.println(dishes + " тарелок - именно столько не хватает тарелок в наборе посуды!");
+
+
+        dishes = cups * plates;
+        System.out.println("Если умножим количество чашек на количество тарелок, то получим число " + dishes);
+
+        dishes = plates / cups;
+        System.out.println("Разделим количество тарелок на количество чашек и получим " + dishes + " набора посуды!");
+
+        dishes = plates % cups;
+        System.out.println("С помощью модуля от деления вычисляем остаток после укомплектования наборов посуды, он равен  числу " + dishes);
+    }
+}
