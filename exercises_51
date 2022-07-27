@@ -1,0 +1,16 @@
+public class test {
+    public static void main(String[] args) {
+        Scanner test = new Scanner (System.in);
+        double firstNumber, secondNumber, result;
+
+        System.out.println("Введите первое число: ");
+        firstNumber = test.nextDouble();
+
+        System.out.println("Введите второе число: ");
+        secondNumber = test.nextDouble();
+
+        result = firstNumber + secondNumber;
+
+        System.out.println("Сумма чисел равна " + result);
+    }
+}
