@@ -1,0 +1,15 @@
+public class test {
+    public static void main(String[] args) {
+        int Number = 40;
+        System.out.println(++Number);
+        System.out.println(Number++);
+        System.out.println(Number);
+        System.out.println(--Number);
+        System.out.println(Number--);
+        System.out.println(Number);
+        System.out.println(Number += 8);
+        System.out.println(Number -= 8);
+        System.out.println(Number *= 2);
+        System.out.println(Number /= 2);
+    }
+}
