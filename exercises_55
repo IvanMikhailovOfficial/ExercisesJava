@@ -1,0 +1,9 @@
+public class test {
+    public static void main(String[] args) {
+        int Cigarettes = 20;
+        while (Cigarettes >= 0){
+            System.out.println("В пачке " + Cigarettes + " сигарет.");
+            --Cigarettes;
+        }
+    }
+}
