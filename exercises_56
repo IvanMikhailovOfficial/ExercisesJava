@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Bender {
+    public static void main(String[] args) {
+        Scanner enter = new Scanner(System.in);
+        Fry PhillipFry = new Fry();
+
+        System.out.println("Введи свое имя: ");
+
+        String name = enter.nextLine();
+        PhillipFry.FrySay(name);
+    }
+}
+
+
+public class Fry {
+    public void FrySay (String name) {
+        System.out.println(name + " - капитальный красавчик!");
+    }
+}
