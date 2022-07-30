@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Bender {
+    public static void main(String[] args) {
+        Scanner enter = new Scanner (System.in);
+        int amount, counter;
+        counter = 0;
+        int grade;
+        double summa = 0;
+
+        System.out.println("Введи количество учащихся: ");
+        amount = enter.nextInt();
+        if (amount <= 0){
+            System.out.println("Введи корректное количество учащихся!");
+            amount = enter.nextInt();
+        }
+        while (counter < amount){
+            counter++;
+            System.out.println("Введи оценку " + counter + " ученика: ");
+            grade = enter.nextInt();
+            if (grade <= 5 && grade > 0){
+                summa += grade;
+            }
+            else {
+                System.out.println("Введи корректную оценку! ");
+                grade = enter.nextInt();
+            }
+        }
+        System.out.println("Средний балл класса равен: " + summa/amount);
+    }
+}
