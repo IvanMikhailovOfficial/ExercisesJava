@@ -1,0 +1,27 @@
+public class Bender {
+    public static void main(String[] args) {
+        Fry PhillipFry = new Fry("Interstellar");
+        Fry PFry = new Fry("Terminator");
+
+        PhillipFry.output();
+        PFry.output();
+    }
+}
+
+
+public class Fry {
+private String movieName;
+
+    public Fry(String name) {
+        movieName = name;
+    }
+    public void setName (String name) {
+       movieName = name;
+    }
+    public String getName(){
+        return movieName;
+    }
+    public void output(){
+        System.out.printf("Твой любимый фильм - %s", getName());
+    }
+}
