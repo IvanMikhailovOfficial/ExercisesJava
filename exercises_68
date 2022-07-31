@@ -1,0 +1,11 @@
+public class Bender {
+    public static void main(String[] args) {
+        System.out.println(Math.abs(-82) + " возвращаем положительное число.");
+        System.out.println(Math.ceil(2.1) + " округляем число в большую сторону.");
+        System.out.println(Math.floor(5.99) + " округляем число в меньшую сторону.");
+        System.out.println(Math.max(7.1, 3.8) + " выводим наибольшее число.");
+        System.out.println(Math.min(9.5, 3.6) + " выводим наименьшее число.");
+        System.out.println(Math.pow(4, 2) + " возводим число в степень.");
+        System.out.println(Math.abs(14) + " вычисляем квадратный корень.");
+    }
+}
