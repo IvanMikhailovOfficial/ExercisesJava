@@ -1,0 +1,17 @@
+public class Bender {
+    public static void main(String[] args) {
+        String heroes [] = new String[5];
+
+        heroes[0] = "Лила Туранга";
+        heroes[1] = "Зойдберг";
+        heroes[2] = "Нибблер";
+        heroes[3] = "Зепп Браннинган";
+        heroes[4] = "Филипп Дж. Фрай";
+
+        System.out.println(heroes[3]);
+
+        for (int i = 0; i < 5; i++){
+            System.out.println(heroes[i]);
+        }
+    }
+}
