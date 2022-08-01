@@ -1,0 +1,21 @@
+public class Bender {
+    public static void main(String[] args) {
+        int massiv1[][] = {{67, 8, 92,74}, {86,46,20,9}};
+        int massiv2[][] = {{34,9}, {3}, {56,8,32,91,72}};
+
+        System.out.println("Это первый массив: ");
+        massiv(massiv1);
+
+        System.out.println("Это второй массив: ");
+        massiv(massiv2);
+    }
+
+    public static void massiv (int m[][]) {
+        for (int i = 0; i < m.length; i++){
+            for (int y = 0; y < m[i].length; y++){
+                System.out.print(m[i][y] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
