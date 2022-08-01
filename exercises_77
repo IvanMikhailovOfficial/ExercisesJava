@@ -1,0 +1,8 @@
+public class Bender {
+    public static void main(String[] args) {
+        int massiv1[][] = {{67, 8, 92,74}, {86,46,20,9}};
+        int massiv2[][] = {{34,9}, {3}, {56,8,32,91,72}};
+        System.out.println(massiv1[1][3]);
+        System.out.println(massiv2[2][2]);
+    }
+}
