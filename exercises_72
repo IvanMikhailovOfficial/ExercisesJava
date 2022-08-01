@@ -1,0 +1,10 @@
+public class Bender {
+    public static void main(String[] args) {
+        System.out.println("Позиция\tЗначение");
+        String animals[] = {"уж", "еж", "кот", "пес", "лис"};
+
+        for (int i = 0; i < animals.length; i++){
+            System.out.println(i + "\t" + animals[i]);
+        }
+    }
+}
