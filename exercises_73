@@ -1,0 +1,12 @@
+public class Bender {
+    public static void main(String[] args) {
+        int Bender[] = {46, 98, 8, 25, 6, 17};
+
+        int sum = 0;
+
+        for (int i = 0; i < Bender.length; i++){
+            sum += Bender[i];
+        }
+        System.out.println("Сумма числел массива равна " + sum);
+    }
+}
