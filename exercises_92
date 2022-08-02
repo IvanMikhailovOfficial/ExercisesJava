@@ -1,0 +1,27 @@
+import javax.swing.JFrame;
+
+public class Bender {
+    public static void main(String[] args) {
+        Fry wnd = new Fry();
+        wnd.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        wnd.setSize(400,200);
+        wnd.setVisible(true);
+    }
+}
+
+
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Fry extends JFrame{
+    private JLabel text1;
+
+    public Fry() {
+        super("Вместо заголовка всплывающего окна!");
+        setLayout(new FlowLayout());
+        text1 = new JLabel("Я знаю, что вы сделали прошлым летом!");
+        text1.setToolTipText("Это не шутка!");
+        add(text1);
+    }
+}
