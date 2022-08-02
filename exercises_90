@@ -1,0 +1,28 @@
+public class Bender {
+    public static void main(String[] args) {
+       Fry fry = new Fry();
+       Rick rick = new Rick();
+
+       fry.cart();
+       rick.cart();
+    }
+}
+
+
+public class Cartoon {
+    public void cart(){
+        System.out.println("Привет из метода Мультик!");
+    }
+}
+
+
+public class Fry extends Cartoon{
+
+}
+
+
+public class Rick extends Cartoon{
+    public void cart(){
+        System.out.println("Привет из метода Рик!");
+    }
+}
