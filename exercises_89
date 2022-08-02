@@ -1,0 +1,29 @@
+public class Bender {
+    public static void main(String[] args) {
+       Fry finalObject = new Fry(7);
+
+        for (int i = 0; i < 8; i++) {
+            finalObject.add();
+            System.out.printf("%s", finalObject);
+        }
+
+        }
+}
+
+
+public class Fry {
+    private int sum;
+    private final int num;
+
+    public Fry(int n){
+        num = n;
+    }
+
+    public void add(){
+        sum += num;
+    }
+
+    public String toString(){
+        return String.format("Сумма числел равна = %s\n", sum);
+    }
+}
