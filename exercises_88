@@ -1,0 +1,38 @@
+public class Bender {
+    public static void main(String[] args) {
+        Fry pers1 = new Fry("Остап", "Бендер");
+        Fry pers2 = new Fry("Киса", "Воробьянинов");
+        Fry pers3 = new Fry("Отец", "Федор");
+
+        System.out.println();
+
+        System.out.println(pers2.getFerstName());
+        System.out.println(pers2.getLastName());
+        System.out.println(pers2.getCount()); // System.out.println(Fry.getCount());
+
+    }
+}
+
+
+public class Fry {
+   private String ferstName;
+   private String lastName;
+   private static int count = 0;
+
+   public Fry(String fName, String lName){
+       ferstName = fName;
+       lastName = lName;
+       count++;
+       System.out.printf("%s %s : в фильме 12 стульев - %d персонаж(а\\ей). \n", fName, lName, count);
+   }
+
+   public String getFerstName(){
+       return ferstName;
+   }
+   public String getLastName(){
+       return lastName;
+   }
+   public static int getCount(){
+       return count;
+   }
+}
