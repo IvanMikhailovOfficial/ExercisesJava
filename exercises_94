@@ -1,0 +1,35 @@
+import javax.swing.JFrame;
+
+public class Bender {
+    public static void main(String[] args) {
+        Cartoon heroes[] = new Cartoon[2];
+        heroes[0] = new Fry();
+        heroes[1] = new Rick();
+
+        for (int i = 0; i < heroes.length; i++) {
+            heroes[i].cart();
+
+        }
+    }
+}
+
+
+public class Cartoon {
+    void cart(){
+        System.out.println("Привет из метода Мультик!");
+    }
+}
+
+
+public class Fry extends Cartoon{
+    void cart(){
+        System.out.println("Привет из метода Фрай!");
+    }
+}
+
+
+public class Rick extends Cartoon{
+     void cart(){
+        System.out.println("Привет из метода Рик!");
+    }
+}
