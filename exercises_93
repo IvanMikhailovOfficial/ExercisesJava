@@ -1,0 +1,60 @@
+import javax.swing.JFrame;
+
+public class Bender {
+    public static void main(String[] args) {
+        Fry window = new Fry();
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setSize(400, 200);
+        window.setVisible(true);
+
+    }
+}
+
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JOptionPane;
+
+public class Fry extends JFrame{
+    private JTextField field1;
+    private JTextField field2;
+    private JTextField field3;
+    private JPasswordField pass;
+
+    public Fry(){
+        super("Вместо названия окна!");
+        setLayout(new FlowLayout());
+        field1 = new JTextField(10);
+        add(field1);
+        field2 = new JTextField("Введи здесь свой текст: ");
+        add(field2);
+        field3 = new JTextField("Нередактируемое поле!", 20);
+        field3.setEditable(false);
+        add(field3);
+        pass = new JPasswordField("Мой пароль!");
+        add(pass);
+        Handler hand = new Handler();
+        field1.addActionListener(hand);
+        field2.addActionListener(hand);
+        field3.addActionListener(hand);
+        pass.addActionListener(hand);
+    }
+    private class Handler implements ActionListener{
+        public void actionPerformed(ActionEvent event){
+            String string = "";
+            if(event.getSource() == field1)
+                string = String.format("Поле 1 : %s", event.getActionCommand());
+            else if(event.getSource() == field2)
+                string = String.format("Поле 2 : %s", event.getActionCommand());
+            else if(event.getSource() == field3)
+                string = String.format("Поле 3 : %s", event.getActionCommand());
+            else if(event.getSource() == pass)
+                string = String.format("Поле с паролем : %s", event.getActionCommand());
+            JOptionPane.showMessageDialog(null, string);
+        }
+    }
+}
