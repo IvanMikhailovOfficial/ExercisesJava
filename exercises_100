@@ -1,0 +1,25 @@
+public class Bender {
+    public static void main(String[] args) {
+        int beerBottle = 99;
+        String word = "бутылок (бутылки)";
+
+        while (beerBottle > 0){
+
+
+            System.out.println(beerBottle + " " + word + " пива на стене!");
+            System.out.println(beerBottle + " " + word + " пива!");
+            System.out.println("Возьми одну!");
+            System.out.println("Пусти по кругу!");
+            beerBottle = beerBottle - 1;
+
+            if (beerBottle == 1){
+                word = "бутылка";
+            }
+            if (beerBottle > 0){
+                System.out.println(beerBottle + " " + word + " пива на стене!");
+            } else {
+                System.out.println("Нет бутылок пива на стене!");
+            }
+        }
+    }
+}
