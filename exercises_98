@@ -1,0 +1,11 @@
+public class Bender {
+    public static void main(String[] args) {
+        int x = 7;
+        if (x == 8){
+            System.out.println("х должен равняться 8");
+        } else {
+            System.out.println("х не равен 8");
+        }
+        System.out.println("Эта строка выполняется в любом случае!");
+    }
+}
