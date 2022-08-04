@@ -1,0 +1,17 @@
+public class Bender {
+    public static void main(String[] args) {
+        Fundamental heroes = new Fundamental();
+        Cartoon ObCart = new Cartoon();
+        Cartoon ObRick = new Rick();
+
+        heroes.glv(ObCart);
+        heroes.glv(ObRick);
+    }
+}
+
+
+public class Fundamental {
+    public void glv(Cartoon g){
+        g.cart();
+    }
+}
