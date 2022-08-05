@@ -1,0 +1,79 @@
+import java.util.Random;
+
+ public class Bender {
+     //public static void main(String[] args) {
+     Player Lila;
+     Player Rick;
+     Player Fry;
+
+     public void beginningOfTheGame(){
+         Lila = new Player();
+         Rick = new Player();
+         Fry = new Player();
+
+         int opinion1 = 0;
+         int opinion2 = 0;
+         int opinion3 = 0;
+
+         boolean LilaIsRight = false;
+         boolean RickIsRight = false;
+         boolean FryIsRight = false;
+
+         int hiddenNumber = (int) (Math.random() * 11);
+         System.out.println("Отгадайте число от 0 до 10");
+
+
+         while (true){
+             System.out.println("Я загадал число - " + hiddenNumber);
+
+         Lila.opinion();
+         Rick.opinion();
+         Fry.opinion();
+
+             opinion1 = Lila.number;
+             System.out.println("Лила считает, что я загадал число " + opinion1);
+             opinion2 = Rick.number;
+             System.out.println("Лила считает, что я загадал число " + opinion2);
+             opinion3 = Fry.number;
+             System.out.println("Лила считает, что я загадал число " + opinion3);
+
+             if (opinion1 == hiddenNumber){
+                 LilaIsRight = true;
+             }
+             if (opinion2 == hiddenNumber){
+                 RickIsRight = true;
+             }
+             if (opinion3 == hiddenNumber){
+                 FryIsRight = true;
+             }
+
+             if (LilaIsRight || RickIsRight || FryIsRight){
+                 System.out.println("Лила предполагает, что это число " + LilaIsRight);
+                 System.out.println("Рик считает, что я загадал число " + RickIsRight);
+                 System.out.println("А Фрай думает, что загаданное мной число " + FryIsRight);
+                 System.out.println("Ну все, расходимся! Нечего тут глазеть!");
+                 break;
+             } else {
+                 System.out.println("Пробуйте снова!");
+             }
+         }
+    }
+}
+
+
+import java.util.Random;
+public class Player {
+    int number = 0;
+    public void opinion(){
+        number = (int) (Math.random() * 11);
+        System.out.println("Я загадал число - " + number);
+    }
+}
+
+
+public class Fundamental {
+    public static void main(String[] args) {
+        Bender game = new Bender();
+        game.beginningOfTheGame();
+    }
+}
