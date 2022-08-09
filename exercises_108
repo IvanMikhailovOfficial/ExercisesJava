@@ -1,0 +1,24 @@
+ class Bender {
+     public static void main(String[] args) {
+         boolean canBender = false;
+     void playBender(){
+             System.out.println("text1");
+         }
+    }
+     void recordBender(){
+         System.out.println("text2");
+     }
+}
+
+
+public class TestDrive {
+    public static void main(String[] args) {
+        t.canBender = true;
+        t.playBender();
+
+        Bender t = new Bender();
+        if (t.canBender == true){
+            t.recordBender();
+        }
+    }
+}
