@@ -1,0 +1,42 @@
+public class Bender {
+     public static void main(String[] args) {
+
+         String[] name = new String[3];
+         int[]number = new int[5];
+
+         name[0] = "Lila";
+         name[1] = "Fry";
+         name[2] = "Rick";
+
+         System.out.println(name[0]);
+         System.out.println(name[1]);
+         System.out.println(name[2]);
+
+         number[0] = 10;
+         number[1] = 20;
+         number[2] = 30;
+         number[3] = 40;
+         number[4] = 50;
+
+         System.out.println(number[2]);
+
+         int [] numberTwo = {60, 70, 80, 90, 100};
+
+         System.out.println(numberTwo[0]);
+         System.out.println(numberTwo[1]);
+         System.out.println(numberTwo[2]);
+         System.out.println(numberTwo[3]);
+         System.out.println();
+
+         for (int i = 0; i < 4; i++) {
+             System.out.println(numberTwo[i]);
+         }
+         int[] numberThre = new int[5];
+         System.out.println();
+
+         for (int j = 0; j < 5; j++) {
+             numberThre[j] = j * 2;
+             System.out.println(numberThre[j]);
+         }
+     }
+}
