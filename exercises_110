@@ -1,0 +1,84 @@
+ public class Bender {
+     public static void main(String[] args) {
+
+         int a;
+         a = 1;
+         a = 2;
+         System.out.println(a);
+
+         int b = a;
+         System.out.println(b);
+         int c, d;
+
+         c = d = b;
+
+         System.out.println(c + " " + d);
+         System.out.println();
+
+         System.out.println(d + a);
+         System.out.println(d - a);
+         System.out.println(d * a);
+         System.out.println(d / a);
+         System.out.println();
+
+         double q = 45;
+         double w = 8;
+         System.out.println(q / w);
+         System.out.println(q % w);
+
+         w = c + d * a;
+         System.out.println(w);
+         System.out.println();
+
+         w = (c + d) * a;
+         System.out.println(w);
+
+         System.out.println(q > w);
+         System.out.println(q < w);
+         System.out.println();
+         System.out.println(q -100 >= w);
+         System.out.println(q -100 <= w);
+         System.out.println();
+         System.out.println(q == w);
+         System.out.println(q != w);
+         System.out.println();
+         System.out.println(q -100 >= w + 200);
+         System.out.println(!(q -100 >= w + 200));
+         System.out.println();
+         System.out.println(!(true));
+
+         System.out.println(b);
+         System.out.println(b++);
+         System.out.println(b);
+         int r;
+         r = ++b;
+         System.out.println(r);
+
+         int t;
+         int y;
+         t = 30;
+         y = 40;
+         System.out.println();
+         System.out.println(t > y || t < y);
+         System.out.println(t > y || t < 60);
+         System.out.println(t > y && t < y);
+         System.out.println();
+
+         int u;
+         u = 9;
+         System.out.println(Math.sqrt(u));//вычисляем корень
+         System.out.println(Math.pow(u, 3));// возводим в степень
+
+         int p;
+         p = 10;
+         p += 5;
+         System.out.println(p);
+         p -= 5;
+         System.out.println(p);
+         p *= 5;
+         System.out.println(p);
+         p /= 5;
+         System.out.println(p);
+         //p %= 2; // p = p % 2
+     }
+}
