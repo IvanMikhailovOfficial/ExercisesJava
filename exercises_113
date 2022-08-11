@@ -1,0 +1,51 @@
+public class Bender {
+     public static void main(String[] args) {
+         System.out.println("Start");
+         for (int i = 0; i < 5 ; i++) {
+             System.out.println(i * 10);
+         }
+         System.out.println("End");
+         System.out.println();
+
+         for (int i = 10; i > 0 ; i--) {
+             System.out.println(i);
+         }
+
+         int[] array = new int[10];
+         for (int i = 0; i < 10; i++) {
+             array[i] = i * 2;
+         }
+
+         for (int i = 0; i < 10; i++) {
+             System.out.println(i +" " + "the number in the array matters" + " " + array[i]);
+         }
+         System.out.println();
+         for (int element : array){
+             System.out.println(element);
+         }
+         System.out.println();
+
+         int t = 0;
+         while (t < 10){
+             System.out.println("While = " + t);
+             t++;
+         }
+         System.out.println();
+
+         int r = 0;
+         boolean bool = true;
+         while (bool){
+             System.out.println("Boolean = " + r);
+             r++;
+             if(r == 5) bool = false;
+         }
+         System.out.println();
+
+         int w = 0;
+         do {
+             System.out.println("Do = " + w);
+             w++;
+         } while (w < 5);
+
+     }
+}
