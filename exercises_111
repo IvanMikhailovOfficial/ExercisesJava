@@ -1,0 +1,79 @@
+public class Bender {
+     public static void main(String[] args) {
+
+         String s = "Java";
+
+         System.out.println(s.equals("Java"));
+         System.out.println(s.equals("JavaScript"));
+         System.out.println();
+
+         String d = "JavaScript";
+         System.out.println(s.equals(d));
+         System.out.println();
+
+         String f = "JAVA";
+         System.out.println(s.equals(f));
+         System.out.println(s.equalsIgnoreCase(f));
+         System.out.println();
+
+         String g = "JaVa";
+         System.out.println(g);
+         System.out.println(g.toLowerCase());
+         System.out.println(g.toUpperCase());
+         System.out.println();
+
+         System.out.println(g.charAt(3));
+         System.out.println(g.indexOf("Va"));
+         System.out.println();
+
+         String h = "Love Java!";
+         System.out.println(h.contains("Love"));
+         System.out.println(h.contains("Beer"));
+         System.out.println(h.length());
+         System.out.println();
+
+         System.out.println(h.startsWith("Lo"));
+         System.out.println(h.startsWith("!"));
+         System.out.println(h.endsWith("Lo"));
+         System.out.println(h.endsWith("!"));
+         System.out.println();
+
+         String j = "I love to study";
+         String[] array = j.split("to");
+         System.out.println(array[0] + "@" + array[1] + "@");
+         System.out.println(array[0]);
+         System.out.println(array[1]);
+         System.out.println();
+
+         String str = "My name is %s! I'm %d years old!";
+         String name = "Ivan";
+         int age = 32;
+
+         System.out.println(String.format(str, name, age));
+         System.out.println(String.format(str, "Pavel", 6));
+         System.out.println();
+
+         String age2 = "31";
+         int a = Integer.parseInt(age2);
+         System.out.println(a * 2);
+
+         String k = "Hello, world!";
+         System.out.println(k.substring(1, 5));
+         System.out.println(k.substring(7));
+         System.out.println();
+
+         System.out.println(k.substring(7, k.length() - 1));
+         System.out.println();
+
+         String x = "I love ";
+         String x1 = "to study";
+         String x2 = "!";
+         String res;
+
+         res = x + x1 + x2;
+         System.out.println(res);
+
+         res = x.concat(x1).concat(x2);
+         System.out.println(res);
+     }
+}
