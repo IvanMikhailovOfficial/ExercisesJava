@@ -1,0 +1,54 @@
+public class Bender {
+    public static void main(String[] args) {
+
+        int a = 17;
+        int b = 9;
+        int sum;
+
+        sum = getSum(a, b);
+        System.out.println(sum);
+        sum = getSum( 42, 176);
+        System.out.println(sum);
+        System.out.println(getSum(4, 8));
+
+        showSum(18, 32, 89);
+        showSum(17, 65, 83);
+
+        saySmth();
+
+        sayHello("Bart");
+        String name = "Homer";
+        sayHello(name);
+        showSumToPerson("Liza", 90, 60, 90);
+     }
+
+     static int getSum(int x, int y){
+        int sum;
+         sum = x + y;
+         return sum;
+     }
+
+     static void showSum(int x, int y, int z){
+        int sum = x + y + z;
+         System.out.println("Sum " + "= " + sum);
+     }
+
+     static void saySmth(){
+         System.out.println();
+         System.out.print("Hello,");
+         System.out.println("people!");
+     }
+
+     static void sayHello(String name){
+         System.out.println();
+         System.out.println("Hello " + name);
+         System.out.println("How do you?");
+     }
+
+     static void showSumToPerson(String name, int a, int b, int c){
+         System.out.println("Start");
+         sayHello(name);
+         showSum(a, b, c);
+         System.out.println("End");
+     }
+}
