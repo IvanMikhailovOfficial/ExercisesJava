@@ -1,0 +1,16 @@
+public class Bender {
+    public static void main(String[] args) {
+    division(9, 3);
+
+    }
+
+    public static void division(int a, int b) {
+        try {
+            System.out.println("Результат деления двух чисел равен " + a / b);
+        } catch (ArithmeticException e) {
+            System.out.println("Выбрать число не равное 0");
+        } finally {
+            System.out.println("Давай попробуем ещё!");
+        }
+    }
+}
