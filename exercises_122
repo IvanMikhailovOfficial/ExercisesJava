@@ -1,0 +1,17 @@
+public class Esenin {
+    public static void main(String[] args) {
+        System.out.println("* * *");
+        System.out.println();
+        System.out.println("Вечером синим, вечером лунным");
+        System.out.println("Был я когда-то, красивым и юным.");
+        System.out.println();
+        System.out.println("Неудержимо, неповторимо");
+        System.out.println("Все пролетело...далече...мимо...");
+        System.out.println();
+        System.out.println("Сердце остыло, выцвели очи...");
+        System.out.println("Синее счастье! ЛУнные ночи!");
+        System.out.println();
+        System.out.println("4/5 октября 1925");
+        System.out.println("Сергей Есенин");
+    }
+}
