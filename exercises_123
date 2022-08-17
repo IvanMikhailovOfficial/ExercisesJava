@@ -1,0 +1,37 @@
+public class Bender {
+    public static void main(String[] args) {
+
+        byte b = 127;
+
+        short s = 32767;
+
+        int i = 2147483647;
+
+        long l = 10000000000L;
+
+        float f1 = 5.37F;
+        float f2 = 5.37f;
+
+        double d1 = 8.6;
+        double d2 = 94.76;
+
+        char c1 = 'x';
+        char c2 = 'X';
+        char c3 = '5';
+        char c4 = ' ';
+        char c5 = 200;
+        char с6 = '\u05AB';
+
+        boolean b1 = true;
+        boolean b2 = false;
+
+        int j1 = 19;//10
+        int j2 = 0B10011;//2
+        int j3 = 0b10011;//2
+        int j4 = 023;//8
+        int j5 = 0x13;//16
+        int j6 = 0X13;//16
+        int j7 = 100_000_000;
+        System.out.println(j7);
+    }
+}
