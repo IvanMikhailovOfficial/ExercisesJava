@@ -1,0 +1,88 @@
+public class Bender {
+    public static void main(String[] args) {
+
+        int a = 3;
+        int b = a * 3;
+        int c = 2; int d = 6; int e = 4;
+        int f = a + b;
+        double g = 17;
+        double h = 4;
+
+        System.out.println(g/h);
+        System.out.println();
+
+        System.out.println(d/e);
+        System.out.println(d%e);
+        System.out.println();
+
+        a +=2; // a = a + 2;
+        System.out.println(a);
+        System.out.println();
+
+        System.out.println(b);
+        b *= 2;
+        System.out.println(b);
+        System.out.println();
+
+        int i = 8;
+        int j = 4;
+        boolean j1 = i > j;
+        boolean j2 = i != j;
+        System.out.println(j1);
+        System.out.println(j2);
+        System.out.println();
+
+        boolean k = true;
+        boolean l = false;
+        boolean m = true;
+
+        boolean result1 = k && l && m;
+        boolean result2 = k || l || m;
+
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println();
+
+        int n = 20;
+        int o = 60;
+        int p = 99;
+        int q = 100;
+
+        boolean r1 = n > o && ++p == q;
+        boolean r2 = n > o & ++p == q;
+
+        System.out.println(r1);
+        System.out.println(p);
+        System.out.println(r2);
+        System.out.println(p);
+        System.out.println();
+
+        int r = 10;
+        int s = 5;
+        System.out.println(r & s);
+        System.out.println(r | s);
+        System.out.println();
+
+        boolean t1 = false;
+        boolean t2 = false;
+        boolean t3 = false;
+        boolean t4 = true;
+
+        System.out.println(t1 ^ t2 ^ t3);
+        System.out.println(t1 ^ t2 ^ t3 ^ t4);
+        System.out.println();
+
+        char u = 'y';
+        int v = 20;
+        int v1 = u;
+        System.out.println(u + v);
+        System.out.println(u % v);
+        System.out.println();
+
+        boolean w1 = false;
+        //boolean w2 = w1 == true;
+        //System.out.println(w2);
+        boolean w2 = w1 = true;
+        System.out.println(w2);
+    }
+}
