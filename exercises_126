@@ -1,0 +1,42 @@
+public class Bender {
+    public static void main(String[] args) {
+
+        int p1 = 9;
+        int p2 = 20;
+        double k1 = 5.5;
+        double k2 = 1.3;
+        long J = 30L;
+        double result1 = 0;
+        double result2 = 0;
+        result1 = k2 * p1 + p2 % k1 + J;
+        result2 = k2 % p1;
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result2 - J);
+        System.out.println();
+
+        int x = 5;
+        int y = 8;
+        System.out.println(x-- + --x + ++x + x++ * x);
+        System.out.println(++y - y++ * ++y + --y);
+
+        int i1 = 5;
+        int i2 = 11;
+        double d1 = 5.5;
+        double d2 = 1.3;
+        long L = 20L;
+        double result3 = 0;
+        double result4 = 0;
+        result3 = i2 / d1 + d2 % i1 - L;
+        result4 = d2 % i1;
+        System.out.println(result3);
+        System.out.println(result4);
+        System.out.println(result4 - L);
+        System.out.println();
+
+        int a = 5;
+        int b = 8;
+        System.out.println(a-- - --a + ++a + a++ + a);
+        System.out.println(++b - b++ + ++b - --b);
+    }
+}
