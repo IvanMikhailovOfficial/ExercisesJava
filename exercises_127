@@ -1,0 +1,54 @@
+public class Student{
+
+    int StudentIdNumber = 1;
+    String FirstName;
+    String LastName;
+    int YearOfStudy;
+    double MathAverage;
+    double AverageScoreInEconomics;
+    double AverageGradeInAForeignLanguage;
+    double ArithmeticMeanScore;
+}
+
+class StudentTest{
+
+    public static void main(String[] args) {
+
+        Student Bart = new Student();
+        Bart.StudentIdNumber = 1;
+        Bart.FirstName = "Bart";
+        Bart.LastName = "Simpson";
+        Bart.YearOfStudy = 2022;
+        Bart.MathAverage = 3.6;
+        Bart.AverageScoreInEconomics = 4.2;
+        Bart.AverageGradeInAForeignLanguage = 4.7;
+        Bart.ArithmeticMeanScore = (Bart.MathAverage + Bart.AverageScoreInEconomics + Bart.AverageGradeInAForeignLanguage) / 3;
+        System.out.println(Bart.ArithmeticMeanScore + " - средняя арифметическая оценка Барта Симпсона по основным предметам обучения!");
+        System.out.println();
+
+        Student Liza = new Student();
+        Liza.StudentIdNumber = 2;
+        Liza.FirstName = "Liza";
+        Liza.LastName = "Simpson";
+        Liza.YearOfStudy = 2022;
+        Liza.MathAverage = 5.0;
+        Liza.AverageScoreInEconomics = 4.6;
+        Liza.AverageGradeInAForeignLanguage = 3.9;
+        Liza.ArithmeticMeanScore = (Liza.MathAverage + Liza.AverageScoreInEconomics + Liza.AverageGradeInAForeignLanguage) / 3;
+        System.out.println(Liza.ArithmeticMeanScore + " - средняя арифметическая оценка Лизы Симпсон по основным предметам обучения!");
+        System.out.println();
+
+        Student Maggie = new Student();
+        Maggie.StudentIdNumber = 3;
+        Maggie.FirstName = "Maggie";
+        Maggie.LastName = "Simpson";
+        Maggie.YearOfStudy = 2022;
+        Maggie.MathAverage = 4.3;
+        Maggie.AverageScoreInEconomics = 3.1;
+        Maggie.AverageGradeInAForeignLanguage = 3.5;
+        Maggie.ArithmeticMeanScore = (Maggie.MathAverage + Maggie.AverageScoreInEconomics + Maggie.AverageGradeInAForeignLanguage) / 3;
+        System.out.println(Maggie.ArithmeticMeanScore + " - средняя арифметическая оценка Мегги Симпсон по основным предметам обучения!");
+        System.out.println();
+    }
+
+}
