@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/*
+public class Pro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("введите 2022");
+        int thisYear = scanner.nextInt();
+
+        while(thisYear != 2022){
+            System.out.println("введите 2022");
+            thisYear = scanner.nextInt();
+        }
+        System.out.println("вы ввели 2022");
+    }
+}
+*/
+
+public class Pro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int thisYear;
+        do{
+            System.out.println("введите 2022");
+            thisYear = scanner.nextInt();
+        }while (thisYear != 2022);
+
+        System.out.println("вы ввели 2022");
+    }
+}
