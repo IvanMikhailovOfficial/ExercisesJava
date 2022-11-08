@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+/*
+public class Pro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите возраст");
+        int age = scanner.nextInt();
+        switch (age){
+            case 0:
+                System.out.println("Ты родился");
+                break;
+            case 6:
+                System.out.println("Ты пошел в школу");
+                break;
+            case 17:
+                System.out.println("Ты закончил школу");
+                break;
+            default:
+                System.out.println("Ни одно из условий не подошло");
+        }
+    }
+}
+
+ */
+public class Pro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите цвет светофора");
+        String trafficLight = scanner.nextLine();
+        switch (trafficLight){
+            case "красный":
+                System.out.println("вы ввели красный цвет - остановитесь");
+                break;
+            case "желтый":
+                System.out.println("вы ввели желтый цвет - приготовьтесь");
+                break;
+            case "зеленый":
+                System.out.println("вы ввели зеленый цвет - можно продолжить движение");
+                break;
+            default:
+                System.out.println("у светофора нет такого цвета");
+        }
+    }
+}
