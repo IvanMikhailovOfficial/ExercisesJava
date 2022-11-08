@@ -1,0 +1,12 @@
+public class Pro {
+    public static void main(String[] args) {
+        int age = 35;
+        if (age  < 30){
+            System.out.println("Верно");
+        }else if (age > 40){
+            System.out.println("Не верно");
+        }else {
+            System.out.println("Не подпадает под условия");
+        }
+    }
+}
