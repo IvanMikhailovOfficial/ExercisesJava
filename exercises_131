@@ -1,0 +1,22 @@
+public class Pro {
+    public static void main(String[] args) {
+        boolean b = true;
+        boolean v = 75 < 55;
+        boolean n = 55 == 55;
+        System.out.println(b);
+        System.out.println(v);
+        System.out.println(n);
+        System.out.println();
+
+        int value = 10;
+        boolean m = value > 2;
+        System.out.println(m);
+        System.out.println();
+
+        int value1 = 0;
+        while (value1 < 8){
+            System.out.println("цикл " + value1);
+            value1 = value1 + 1;
+        }
+    }
+}
