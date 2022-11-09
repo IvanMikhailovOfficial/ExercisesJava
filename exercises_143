@@ -1,0 +1,26 @@
+public class Pro {
+    public static void main(String[] args) {
+        Book book1 = new Book();
+        book1.title = "Улетают журавни";
+        book1.numberOfPages = 48;
+        book1.information();
+        book1.buy();
+        System.out.println();
+        Book book2 = new Book();
+        book2.title = "Плачут ивы в лесу";
+        book2.numberOfPages = 93;
+        book2.information();
+        book2.buy();
+    }
+}
+
+class Book{
+    String title;
+    int numberOfPages;
+    void information(){
+        System.out.println("Количество страниц в книге, с названием " + title + " равно " + numberOfPages);
+    }
+    void buy(){
+        System.out.println("Рекомендую купить эту книгу!");
+    }
+}
