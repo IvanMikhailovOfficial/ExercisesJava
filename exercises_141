@@ -1,0 +1,19 @@
+public class Pro {
+    public static void main(String[] args) {
+       int[][]mas = {{67, 83, 52},{367, 92, 1}, {54, 25, 61}};
+        System.out.println(mas[1][2]);
+        System.out.println();
+
+        for (int i = 0; i < mas.length; i++){//внешний цикл
+            for(int j = 0; j < mas[i].length; j++){//внутренний цикл
+                System.out.print(mas[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        String[][] str = new String[4][6];
+        str[2][5] = "а вот и я";
+        System.out.println(str[2][5]);
+
+    }
+}
