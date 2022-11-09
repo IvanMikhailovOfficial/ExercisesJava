@@ -1,0 +1,46 @@
+public class Pro {
+    public static void main(String[] args) {
+        Book book1 = new Book();
+        book1.title = "Улетают журавни";
+        book1.numberOfPages = 150;
+        book1.information();
+        book1.buy();
+        book1.numberOfDaysToRead();
+        int twice1 = book1.totalPagesToRead();
+        System.out.println("Если Вы вздумаете перечитать книгу дважды, то придется прочитать " + twice1 + " страниц");
+        System.out.println();
+        Book book2 = new Book();
+        book2.title = "Плачут ивы в лесу";
+        book2.numberOfPages = 250;
+        book2.information();
+        book2.buy();
+        book2.numberOfDaysToRead();
+        int twice2 = book2.totalPagesToRead();
+        System.out.println("Если Вы вздумаете перечитать книгу дважды, то придется прочитать " + twice2 + " страниц");
+
+    }
+}
+
+class Book{
+    String title;
+    int numberOfPages;
+
+    int totalPagesToRead(){
+        int twice = numberOfPages * 2;
+        System.out.println("Если Вы вздумаете перечитать книгу дважды, то придется прочитать " + twice + " страниц");
+        return twice;
+    }
+
+    void numberOfDaysToRead(){
+        int readingSpeedPerDay =numberOfPages/ 50;
+        System.out.println("Количество необходимых дней для прочтения книги равно " + readingSpeedPerDay);
+    }
+    void information() {
+            System.out.println("Количество страниц в книге, с названием " + title + " равно " + numberOfPages);
+    }
+    void buy() {
+        for (int i = 0; i <= 2; i++) {
+            System.out.println("Рекомендую купить эту книгу!");
+        }
+    }
+}
