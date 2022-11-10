@@ -1,0 +1,47 @@
+public class Pro {
+    public static void main(String[] args) {
+        Client client1 = new Client();
+        client1.setName("Иван");
+        client1.setAge(30);
+        System.out.println("Вывод значения имени метода " + client1.getName());
+        System.out.println("Вывод значения возраста метода " + client1.getAge());
+        client1.speak();
+
+        client1.speak();
+    }
+}
+
+class Client{
+    private String name;
+    private int age;
+
+    public void setName(String userName){
+        if (userName.isEmpty()){
+            System.out.println("Имя должно содержать не менее одного символа!");
+        }else {
+            name = userName;
+        }
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setAge(int userAge){
+        if(userAge < 0){
+            System.out.println("Возраст должен содержать не менее одного символа");
+        }else {
+            age = userAge;
+        }
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+void speak (){
+    for (int i = 0; i < 1; i++) {
+        System.out.println("Мое имя " + name + ", и мне " + age + " лет!");
+    }
+}
+}
