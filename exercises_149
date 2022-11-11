@@ -1,0 +1,32 @@
+public class Pro {
+    public static void main(String[] args) {
+        Client number1 = new Client("Лила", 32);
+        Client number2 = new Client("Барт", 14);
+        number1.printTheNumberOfEmployees();
+        number2.printTheNumberOfEmployees();
+        Client number3 = new Client("Гомер", 46);
+        number3.printTheNumberOfEmployees();
+    }
+}
+
+class Client {
+    String name;
+    int age;
+
+    private static int theNumberOfEmployees;
+
+    public Client(String name, int age) {
+        this.name = name;
+        this.age = age;
+        theNumberOfEmployees++;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void printTheNumberOfEmployees(){
+        System.out.println("Количество сотрудников предприятия равно " + theNumberOfEmployees);
+    }
+}
