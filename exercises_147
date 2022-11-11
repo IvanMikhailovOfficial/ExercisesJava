@@ -1,0 +1,46 @@
+public class Pro {
+    public static void main(String[] args) {
+        Client client1 = new Client("Барт");
+        client1.setName("Бендер");
+        client1.setAge(30);
+        client1.getInfo();
+        Client client2 = new Client();
+        client2.setName("Лила");
+        client2.setAge(25);
+        client2.getInfo();
+        Client client3 = new Client("Гомер", 46);
+    }
+}
+
+class Client{
+    String name;
+    int age;
+
+    public Client(){
+        System.out.println("Первый конструктор в деле)");
+    }
+    public Client(String name){
+        System.out.println("Второй конструктор в деле)");
+        this.name = name;
+    }
+    public Client(String name, int age){
+        System.out.println("Третий конструктор в деле)");
+        this.name = name;
+        this.age = age;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setAge(int age){
+        this.age = age;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void getInfo(){
+        System.out.println("Мое имя " + name + ", и мне " + age + " лет!");
+    }
+}
