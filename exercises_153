@@ -1,0 +1,12 @@
+public class Pro {
+    public static void main(String[] args) {
+        System.out.printf("This is a %s \n", "formatted output");
+        System.out.printf("This is a %d \n", 404);
+        System.out.printf("%d месяц подряд получаю %s в размере %f $ \n", 2, "зарплату", 1.300);
+        System.out.printf("String %-20d \n", 57856);
+        System.out.printf("String %20d \n", 57856);
+        System.out.printf("String %20d \n", 867891111);
+        System.out.printf("String %.3f \n", 787.1);
+        System.out.printf("String %.3f \n", 787.998709);
+    }
+}
