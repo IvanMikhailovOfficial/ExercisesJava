@@ -1,0 +1,17 @@
+public class Pro {
+    public static void main(String[] args) {
+        /*
+        String s1 = "I ";
+        String s2 = "love ";
+        String s3 = "Java";
+        String s4 = s1 + s2 + s3;
+        System.out.println(s4);
+         */
+        StringBuilder myLove = new StringBuilder("I");
+        System.out.println(myLove.toString());
+        //myLove.append(" love");
+        //myLove.append(" Java");
+        myLove.append(" love").append(" Java");
+        System.out.println(myLove.toString());
+    }
+}
