@@ -1,0 +1,77 @@
+package Interfaces;
+
+public class Test {
+    public static void main(String[] args) {
+        /*
+        Animal animal1 = new Animal(1);
+        Person person1 = new Person("Бендер");
+        animal1.eat();
+        person1.becomeAcquainted();
+        animal1.showInfo();
+        person1.showInfo();
+         */
+        //Info info1 = new Animal(2);
+        //Info info2 = new Person("Барт");
+
+        //info1.showInfo();
+        //info2.showInfo();
+
+        //outputInfo(info1);
+        //outputInfo(info2);
+
+        Animal animal1 = new Animal(3);
+        Person person1 = new Person("Лила");
+        outputInfo(animal1);
+        outputInfo(person1);
+    }
+    public static void outputInfo(Info info){
+        info.showInfo();
+    }
+}
+
+
+package Interfaces;
+
+public class Animal implements Info {
+    public int id;
+
+    public Animal(int id){
+        this.id = id;
+    }
+
+    public void eat(){
+        System.out.println("Я люблю кушать!");
+    }
+
+    public void showInfo(){
+        System.out.println("Порядковый номер " + this.id);
+    }
+}
+
+
+package Interfaces;
+
+public class Person implements Info {
+    public String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public void becomeAcquainted(){
+        System.out.println("Давай знакомиться!");
+    }
+
+
+    @Override
+    public void showInfo() {
+        System.out.println("Имя - " + this.name);
+    }
+}
+
+
+package Interfaces;
+
+public interface Info {
+    public void showInfo();
+}
