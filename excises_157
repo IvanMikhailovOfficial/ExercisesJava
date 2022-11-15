@@ -1,0 +1,55 @@
+public class Pro {
+    public static void main(String[] args) {
+        /*
+        Animal animal1 = new Animal();
+        Cat cat1 = new Cat();
+        animal1.eat();
+        cat1.eat();
+
+        Animal animal2 = new Cat();
+        Cat cat2 = new Cat();
+        animal2.eat();
+        Cat cat3 = new Cat();
+        cat3.eat();
+        cat3.mew();
+
+        Animal animal = new Cat();
+        animal.eat();
+         */
+        Animal animal = new Animal();
+        Cat cat = new Cat();
+        Mouse mouse = new Mouse();
+
+        test(animal);
+        test(cat);
+        test(mouse);
+    }
+
+    public static void test(Animal animal){
+        animal.eat();
+    }
+}
+
+
+public class Animal {
+    public void eat(){
+        System.out.println("Хочу кушать!");
+    }
+}
+
+
+public class Cat extends Animal{
+
+    @Override
+    public  void eat(){
+        System.out.println("Кот нализался и хочет спать!");
+
+    }
+    public void mew(){
+        System.out.println("Буду мяукать, пока не накормят!");
+    }
+}
+
+
+public class Mouse extends Animal {
+}
