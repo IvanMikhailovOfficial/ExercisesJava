@@ -1,0 +1,19 @@
+class Animal{
+    public void eat(){
+        System.out.println("Немного покушать!");
+    }
+}
+
+public class Pro {
+    public static void main(String[] args) {
+        Animal animal1 = new Animal();
+        animal1.eat();
+
+        Animal animal2 = new Animal(){
+            public void eat() {
+                System.out.println("Кушать очень много");
+            }
+        };
+        animal2.eat();
+    }
+}
