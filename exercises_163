@@ -1,0 +1,15 @@
+interface AbilityToHunt{
+    public void hunting();
+}
+
+class Predator implements AbilityToHunt{
+    @Override
+    public void hunting(){
+    }
+}
+public class Pro {
+    public static void main(String[] args) {
+        AbilityToHunt abilityToHunt = new Predator();
+        abilityToHunt.hunting();
+    }
+}
