@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pro {
+    public static void main(String[] args) {
+        /*
+        List animals = new ArrayList();
+        animals.add ("dog");
+        animals.add ("cat");
+        animals.add ("mouse");
+
+        String animal = (String) animals.get(2);
+        System.out.println(animal);
+         */
+        List<String> animals2 = new ArrayList<>();
+        animals2.add("dog");
+        animals2.add("cat");
+        animals2.add("mouse");
+        
+        String animal2 = animals2.get(2);
+        System.out.println(animal2);
+    }
+}
