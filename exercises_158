@@ -1,0 +1,26 @@
+public class Pro {
+    public static void main(String[] args) {
+        //float f = 117.8F;
+        //long l = 87024L;
+        /*
+        int i = 87;
+        long l = i;
+        int x = (int) l;
+        System.out.println(x);
+
+        int i = 98;
+        double d = i;
+        System.out.println(d);
+
+
+        double d = 117.9;
+        int i = (int)d;
+        System.out.println(i);
+        long l = Math.round(d);
+        System.out.println(l);
+
+         */
+        byte b = (byte) 130;
+        System.out.println(b);
+    }
+}
