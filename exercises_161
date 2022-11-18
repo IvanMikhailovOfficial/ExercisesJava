@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pro {
+    public static void main(String[] args) {
+        List<Animal> listOfAnimals = new ArrayList<>();
+        listOfAnimals.add(new Animal(1));
+        listOfAnimals.add(new Animal(2));
+
+        List<Cat> listOfCats = new ArrayList<>();
+        listOfCats.add(new Cat());
+        listOfCats.add(new Cat());
+
+        test(listOfAnimals);
+        test(listOfCats);
+
+    }
+    private static void test(List<? extends Animal> list){ //extends класс и ниже, super класс и выше
+        for (Animal animal : list) {
+            //System.out.println(animal);
+            animal.eat();
+        }
+    }
+}
+
+
+public class Animal {
+
+    public Animal(){
+
+    }
+    private int id;
+    public Animal(int id){
+        this.id = id;
+    }
+
+    public void eat(){
+        System.out.println("Кушать!");
+    }
+    public String toString(){
+        return String.valueOf(id);
+    }
+}
+
+
+public class Cat extends Animal{
+
+}
