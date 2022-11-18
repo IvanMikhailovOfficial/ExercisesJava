@@ -1,0 +1,8 @@
+public class Pro {
+    public static void main(String[] args) {
+        int i1 = 20;
+        Integer i2 = 111;
+        int i3 = i2;
+        Integer.parseInt("111");
+    }
+}
