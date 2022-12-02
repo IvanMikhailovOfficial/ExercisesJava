@@ -1,0 +1,36 @@
+package BankAccount;
+
+public class Сheck {
+
+    double myCheck;
+
+    //пополнение счета
+    double refill (double money){
+        myCheck += money;
+        return myCheck;
+    }
+
+    // снятие со счета
+    double withdrawalFromAccount (double money) {
+        myCheck -= money;
+        return myCheck;
+    }
+
+    // показать состояние
+    void showInfo(){
+        System.out.println("На счету сейчас " + myCheck);
+    }
+}
+
+class CheckTest{
+    public static void main(String[] args) {
+        Сheck c2 = new Сheck();
+
+        c2.myCheck = 479.87;
+        c2.showInfo();
+        c2.refill(100.36);
+        c2.showInfo();
+        c2.withdrawalFromAccount(168.72);
+        c2.showInfo();
+    }
+}
