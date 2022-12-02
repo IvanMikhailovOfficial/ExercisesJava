@@ -1,0 +1,45 @@
+public class Main {
+    int number;
+    String name;
+    String surname;
+    int year;
+    double maths;
+    double economy;
+    double foreignLanguage;
+}
+
+    class PraktikumTest {
+        public static void main(String[] args) {
+            Main Bender = new Main();
+            Main Liza = new Main();
+            Main Bart = new Main();
+
+            Bender.number = 23;
+            Bender.name = "Bender";
+            Bender.surname = "Simpson";
+            Bender.year = 3;
+            Bender.maths = 4.7;
+            Bender.economy = 3.8;
+            Bender.foreignLanguage = 4.2;
+
+            Liza.number = 45;
+            Liza.name = "Liza";
+            Liza.surname = "Simpson";
+            Liza.year = 1;
+            Liza.maths = 2.9;
+            Liza.economy = 3.1;
+            Liza.foreignLanguage = 4.9;
+
+            Bart.number = 76;
+            Bart.name = "Bart";
+            Bart.surname = "Simpson";
+            Bart.year = 4;
+            Bart.maths = 4.9;
+            Bart.economy = 4.1;
+            Bart.foreignLanguage = 2.9;
+
+            System.out.println("Средняя арифметическая оценка студента " + Bender.name + " равна " + (Bender.maths + Bender.economy + Bender.foreignLanguage) / 3);
+            System.out.println("Средняя арифметическая оценка студента " + Liza.name + " равна " + (Liza.maths + Liza.economy + Liza.foreignLanguage) / 3);
+            System.out.println("Средняя арифметическая оценка студента " + Bart.name + " равна " + (Bart.maths + Bart.economy + Bart.foreignLanguage) / 3);
+        }
+    }
