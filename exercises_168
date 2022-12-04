@@ -1,0 +1,38 @@
+package Employee;
+
+public class Employee {
+
+    int id;
+    String surnam;
+    int age;
+    double salary;
+    String department;
+
+
+     Employee(int id2, String surnam2, int age2, double salary2, String department2){
+        id = id2;
+        surnam = surnam2;
+        age = age2;
+        salary = salary2;
+        department = department2;
+    }
+
+    double twiceAsMuch (){
+        salary *= 2;
+        return salary;
+    }
+}
+
+class EmployeeTest{
+
+    public static void main(String[] args) {
+        Employee employee1 = new Employee(11, "e11", 76, 65.987, "fh");
+        Employee employee2 = new Employee(45, "e22", 54, 66,"gtvj");
+
+        employee1.twiceAsMuch();
+        System.out.println("Тепрь заработная плата работника " + employee1.surnam + " - " + employee1.salary);
+
+        employee2.twiceAsMuch();
+        System.out.println("Тепрь заработная плата работника " + employee2.surnam + " - " + employee2.salary);
+    }
+}
