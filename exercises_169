@@ -1,0 +1,56 @@
+package StudentTest;
+
+public class StudentTest {
+    int number;
+    String name;
+    String surname;
+    int year;
+    double maths;
+    double economy;
+    double foreignLanguage;
+
+    double arithmeticMean(StudentTest st){
+        double arithMean = (st.maths + st.economy + st.foreignLanguage) / 3;
+        System.out.println("Средняя арифметическая оценка студента " + st.name+ " " + st.surname + " - " + arithMean);
+        return arithMean;
+    }
+
+}
+
+class Student {
+    public static void main(String[] args) {
+
+        StudentTest st1 = new StudentTest();
+        st1.number = 23;
+        st1.name = "Bender";
+        st1.surname = "Simpson";
+        st1.year = 3;
+        st1.maths = 4.7;
+        st1.economy = 3.8;
+        st1.foreignLanguage = 4.2;
+
+        StudentTest st2 = new StudentTest();
+        st2.number = 45;
+        st2.name = "Liza";
+        st2.surname = "Simpson";
+        st2.year = 1;
+        st2.maths = 2.9;
+        st2.economy = 3.1;
+        st2.foreignLanguage = 4.9;
+
+        StudentTest st3 = new StudentTest();
+        st3.number = 76;
+        st3.name = "Bart";
+        st3.surname = "Simpson";
+        st3.year = 4;
+        st3.maths = 4.9;
+        st3.economy = 4.1;
+        st3.foreignLanguage = 2.9;
+
+        StudentTest sTest = new StudentTest();
+        sTest.arithmeticMean(st1);
+        sTest.arithmeticMean(st2);
+        sTest.arithmeticMean(st3);
+
+    }
+}
