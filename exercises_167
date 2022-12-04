@@ -1,0 +1,36 @@
+package BankAccount;
+
+ class Check {
+
+     int id =35;
+     String name = "Bender";
+     double myCheck = 45.86;
+
+    //пополнение счета
+    double refill (double money){
+        System.out.println("Текущий баланс " + myCheck);
+        System.out.println("Внесли " + money);
+        myCheck += money;
+        System.out.println("Текущий баланс " + myCheck);
+        System.out.println();
+        return money;
+    }
+
+    // снятие со счета
+    void withdrawalFromAccount (double money) {
+        System.out.println("Текущий баланс " + myCheck);
+        System.out.println("Вывели " + money);
+        myCheck -= money;
+        System.out.println("Текущий баланс " + myCheck);
+        System.out.println();
+    }
+}
+
+class CheckTest{
+    public static void main(String[] args) {
+        Check check = new Check();
+
+        check.refill(27.36);
+        check.withdrawalFromAccount(28.35);
+    }
+}
