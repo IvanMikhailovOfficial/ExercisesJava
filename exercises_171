@@ -1,0 +1,17 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class JaRa {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String text;
+        System.out.println();
+        System.out.println("Отгадай загадку: зимой и летом - одним цветом");
+        while (!((text = reader.readLine()).equals("Хватит") || text.equals("Елка"))) {
+            System.out.println("Давай попробуем снова:");
+        }
+        reader.close();
+        System.out.println("Это правильный ответ");
+    }
+}
